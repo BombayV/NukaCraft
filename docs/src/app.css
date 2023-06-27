@@ -12,9 +12,17 @@
 		font-family: 'BrushScript';
 		src: url('/fonts/BrushScriptOpti-Regular.otf') format('opentype');
 	}
+
+	body {
+		@apply bg-teal-50;
+	}
 }
 
 @layer components {
+	.btn {
+		@apply bg-teal-600 rounded-md px-10 font-semibold text-[.875rem] 3xl:text-2xl text-white mt-8 md:mt-10 py-2.5 hover:bg-teal-700 transition-colors duration-300 tracking-wide;
+	}
+
 	.fade-bg {
 		background: linear-gradient(75deg, rgb(0, 0, 0, 0.7), transparent 70%);
 	}
@@ -33,5 +41,9 @@
 
 	.dim-mask {
 		filter: brightness(0.7);
+	}
+
+	.custom-h {
+		height: calc(100vh + 13rem);
 	}
 }

@@ -1,12 +1,12 @@
 <script lang="ts">
 	import '../app.css';
+	import NukaCap from '$lib/assets/NukaCap.png';
+	import Footer from '$lib/components/Footer.svelte';
 </script>
 
-<main
-	class="w-full h-screen bg-black flex flex-col lg:flex-row items-center overflow-x-clip"
->
+<main class="w-full custom-h relative flex flex-col lg:flex-row items-center overflow-x-clip">
 	<div
-		class="relative flex justify-center flex-col font-epilogue lg:w-1/2 mt-44 md:w-4/5 lg:mt-0 z-10 lg:h-full lg:pl-20 xl:pl-28 lg:fade-bg"
+		class="relative flex justify-center flex-col font-epilogue lg:w-1/2 mt-44 md:w-4/5 lg:mt-0 z-10 lg:mb-40 lg:h-full lg:pl-20 xl:pl-28 lg:fade-bg"
 	>
 		<h1
 			class="font-extrabold text-4xl md:text-6xl lg:text-7xl text-neutral-50 drop-shadow-lg text-center lg:text-left 3xl:text-8xl px-8"
@@ -21,20 +21,47 @@
 			> Minecraft experience
 		</p>
 	</div>
-	<div class="relative nuka-bg mx-auto w-96 h-3/5 z-[3] lg:scale-125 overflow-hidden lg:translate-y-12 lg:-rotate-6 normal-mask 3xl:big-mask 3xl:translate-y-28"></div>
-	<div class="absolute left-0 top-0 h-[60%] w-full bg-gradient-to-b from-black to-teal-950 dim-mask lg:bright-mask">
-		<div class="poster-bg w-full bg-cover lg:bg-contain"></div>
+	<div
+		class="relative nuka-bg mx-auto w-96 h-3/5 z-[3] lg:scale-125 overflow-hidden lg:translate-y-12 lg:-rotate-6 normal-mask 3xl:big-mask 3xl:translate-y-28"
+	/>
+	<div
+		class="absolute left-0 top-0 h-[48%] w-full bg-gradient-to-b from-red-950 to-teal-700 dim-mask lg:bright-mask"
+	>
+		<div class="poster-bg w-full bg-cover lg:bg-contain shadow-md drop-shadow-md" />
 	</div>
-	<div class="absolute left-0 bottom-0 h-[40%] w-full water-perspective overflow-hidden mix-blend-screen">
-		<div class="w-full h-full mix-blend-overlay z-[1] absolute bg-gradient-to-t from-teal-950 to-teal-400"></div>
-		<div class="water-bg"></div>
+	<div class="absolute left-0 bottom-0 h-[52%] w-full water-perspective overflow-hidden">
+		<div
+			class="w-full h-full mix-blend-overlay z-10 absolute bg-gradient-to-t from-teal-950 to-teal-400"
+		/>
+		<div class="water-bg" />
+	</div>
+	<div class="absolute w-full bottom-0 lg:-bottom-10 z-10">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="w-full fill-teal-50">
+			<path
+				fill-opacity="1"
+				d="M0,128L40,149.3C80,171,160,213,240,224C320,235,400,213,480,197.3C560,181,640,171,720,192C800,213,880,267,960,266.7C1040,267,1120,213,1200,192C1280,171,1360,181,1400,186.7L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+			/>
+		</svg>
 	</div>
 </main>
-<!--<div class="h-20 absolute w-full bottom-0 -translate-y-[2rem] lg:top-0 lg:-translate-y-[6rem]">-->
-<!--  <svg id="visual" class="fill-amber-500" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">-->
-<!--    <path d="M0 438L30 438.2C60 438.3 120 438.7 180 446.3C240 454 300 469 360 474.8C420 480.7 480 477.3 540 472.2C600 467 660 460 720 449.2C780 438.3 840 423.7 870 416.3L900 409L900 601L870 601C840 601 780 601 720 601C660 601 600 601 540 601C480 601 420 601 360 601C300 601 240 601 180 601C120 601 60 601 30 601L0 601Z" stroke-linecap="round" stroke-linejoin="miter"></path>-->
-<!--  </svg>-->
-<!--</div>-->
+<section
+	class="min-h-screen h-max relative w-full flex flex-col items-center px-8 md:px-28 py-12 font-epilogue max-w-5xl mx-auto"
+>
+	<img src={NukaCap} alt="NukaCap" class="w-2/3 max-w-xs" />
+	<h1 class="text-5xl md:text-6xl 3xl:text-7xl font-extrabold text-center text-teal-950 mt-12">
+		Welcome to NukaCraft
+	</h1>
+	<p class="text-lg lg:text-xl 3xl:text-2xl text-center text-teal-950 mt-4 md:mt-6">
+		NukaCraft is an open-source mod for Minecraft that aims to bring the Fallout universe to the
+		game. Explore the wasteland, build settlements, fight off mutants, and more.
+	</p>
+	<p class="text-lg lg:text-xl 3xl:text-2xl text-center text-teal-950 mt-4 md:mt-6">
+		The mod is currently in development and is not yet available for download. The mod will be
+		available for Minecraft 1.20.* when it is released.
+	</p>
+	<button class="btn" type="button" disabled>Download</button>
+</section>
+<Footer />
 
 <svelte:head>
 	<title>NukaCraft | Home</title>
@@ -58,19 +85,19 @@
 		background-position: center;
 		animation: move 120s linear infinite;
 		/* shadow on the bottom */
-		box-shadow: inset 0px -120px 120px -120px rgba(0, 0, 0, 0.6);
+		box-shadow: inset 0px -12vh 12vh -12vh rgba(0, 0, 0, 0.8);
 	}
 
 	.water-bg {
 		background-image: url('/NukaQuantumWater.png');
 		height: 100%;
 		background-repeat: repeat;
-		transform: scale(8) skewX(45deg) rotateX(85deg);
+		transform: scale(8) skewX(45deg) rotateX(82deg);
 		transform-origin: top;
 		image-rendering: pixelated;
 		animation: water 20s linear infinite;
 		/* shadow on the top */
-		box-shadow: inset 0px 200px 180px -50px rgba(0, 0, 0, 0.8);
+		box-shadow: inset 0px 20vh 20vh -5vh rgba(0, 0, 0, 0.8);
 		filter: saturate(0.4) hue-rotate(5deg) brightness(0.9);
 	}
 
@@ -87,8 +114,12 @@
 		}
 	}
 
-	@keyframes move{
-		from { background-position: 0 0; }
-		to { background-position: 917px 0; }
+	@keyframes move {
+		from {
+			background-position: 0 0;
+		}
+		to {
+			background-position: 917px 0;
+		}
 	}
 </style>
