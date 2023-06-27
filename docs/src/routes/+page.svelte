@@ -58,7 +58,7 @@
 		background-position: center;
 		animation: move 120s linear infinite;
 		/* shadow on the bottom */
-		box-shadow: inset 0px -100px 100px -80px rgba(0, 0, 0, 0.8);
+		box-shadow: inset 0px -120px 120px -120px rgba(0, 0, 0, 0.6);
 	}
 
 	.water-bg {
