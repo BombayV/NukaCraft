@@ -3,7 +3,7 @@
 	"package": "org.entityevolution.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+		"NukaMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

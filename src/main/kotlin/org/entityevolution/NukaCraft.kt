@@ -3,7 +3,7 @@ package org.entityevolution
 import net.fabricmc.api.ModInitializer
 import org.slf4j.LoggerFactory
 
-object ExampleMod : ModInitializer {
+object NukaCraft : ModInitializer {
     private val logger = LoggerFactory.getLogger("nukacraft")
 
 	override fun onInitialize() {
