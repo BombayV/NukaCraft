@@ -18,19 +18,19 @@
 	"entrypoints": {
 		"main": [
 			{
-				"value": "org.entityevolution.NukaCraft",
+				"value": "org.entityevolution.Nukacraft",
 				"adapter": "kotlin"
 			}
 		],
 		"client": [
 			{
-				"value": "org.entityevolution.NukaCraftClient",
+				"value": "org.entityevolution.NukacraftClient",
 				"adapter": "kotlin"
 			}
 		],
 		"fabric-datagen": [
 			{
-				"value": "org.entityevolution.NukaCraftDataGenerator",
+				"value": "org.entityevolution.NukacraftDataGenerator",
 				"adapter": "kotlin"
 			}
 		]
