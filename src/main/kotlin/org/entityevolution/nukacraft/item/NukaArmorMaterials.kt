@@ -1,4 +1,4 @@
-package org.entityevolution.item
+package org.entityevolution.nukacraft.item
 
 import net.minecraft.item.ArmorItem
 

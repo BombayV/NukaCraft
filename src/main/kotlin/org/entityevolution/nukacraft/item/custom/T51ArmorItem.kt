@@ -1,4 +1,4 @@
-package org.entityevolution.item.custom
+package org.entityevolution.nukacraft.item.custom
 
 import net.minecraft.item.ArmorItem
 import net.minecraft.item.ArmorMaterial
