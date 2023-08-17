@@ -1,4 +1,4 @@
-package org.entityevolution.mixin.client;
+package org.entityevolution.nukacraft.mixin.client;
 
 import net.minecraft.client.MinecraftClient;
 import org.spongepowered.asm.mixin.Mixin;

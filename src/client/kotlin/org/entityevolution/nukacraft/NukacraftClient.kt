@@ -1,4 +1,4 @@
-package org.entityevolution
+package org.entityevolution.nukacraft
 
 import net.fabricmc.api.ClientModInitializer
 

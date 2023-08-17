@@ -1,9 +1,9 @@
 {
 	"required": true,
-	"package": "org.entityevolution.mixin",
+	"package": "org.entityevolution.nukacraft.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"NukaMixin"
+      "org.entityevolution.nukacraft.nukacraft.mixin.NukaMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
