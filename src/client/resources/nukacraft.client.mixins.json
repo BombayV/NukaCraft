@@ -1,9 +1,9 @@
 {
 	"required": true,
-	"package": "org.entityevolution.mixin.client",
+	"package": "org.entityevolution.nukacraft.mixin.client",
 	"compatibilityLevel": "JAVA_17",
 	"client": [
-		"ExampleClientMixin"
+      "NukacraftClientMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
